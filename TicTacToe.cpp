@@ -68,13 +68,14 @@ char checkWinner(char board[3][3]) {
     return ' '; // No winner yet
 }
 
-void printResult(char winner, const string& playerX, const string& playerO) {
+void printResult(char winner, const string& playerX, const string& playerO, char board[3][3]) {
     if (winner == 'X') {
         cout << "Congratulations " << playerX << ", you are the winner!" << endl;
     } else if (winner == 'O') {
 	cout << "Congratulations " << playerO << ", you are the winner!" << endl; 
     } else {
-        cout << "Tie!" << endl;
+	displayBoard(board);
+	cout << "Tie!" << endl;
     }
 }
 

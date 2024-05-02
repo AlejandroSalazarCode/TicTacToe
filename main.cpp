@@ -30,7 +30,7 @@ int main() {
 	    cout << "the tile you chose is already taken. Please select an open one" << endl;
 	}
     }
-    printResult(winner, playerX, playerO);
+    printResult(winner, playerX, playerO, board);
     
     return 0;
 }
